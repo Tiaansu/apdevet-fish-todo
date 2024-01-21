@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('../images/main-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tw-btn {
+    @apply tw-font-inter tw-py-3 tw-px-6 tw-rounded-lg tw-transition-all tw-duration-200 tw-ease-in-out tw-cursor-pointer disabled:tw-opacity-50 disabled:tw-cursor-not-allowed tw-outline-none tw-border-none tw-shadow-none;
+}
+
+.tw-btn-primary {
+    @apply tw-bg-brand-500 hover:tw-bg-brand-600 active:tw-ring-[6px] active:tw-ring-brand-400 active:tw-ring-opacity-55;
+}
+
+.accordion-btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.accordion-btn-container button[type='button'] {
+    margin: 5px;
+}
